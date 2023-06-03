@@ -1,0 +1,6 @@
+wp-admin-url: "https://example.com/wp-admin"
+form-id: "0"
+login: "user"
+password: "password"
+spreadsheet-id: "1A4212"
+template-worksheet-id: 12345
