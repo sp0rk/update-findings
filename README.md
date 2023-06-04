@@ -72,4 +72,16 @@ template-worksheet-id: 12345
 | template-worksheet-id: | Worksheet id (gid) of the worksheet used as a template for the new worksheets |
 
 ## Run the script
+### Manually
 To run the script execute `python3 update_findings.py` after filling in the config and fulfilling all the prerequisites.
+
+### Periodically
+You can use cron to launch it automatically at given intervals, e.g.
+
+`crontab -e`
+
+Add a line such as:
+
+`0 4 * * * cd /home/sp0rk/update-findings && python3 update_findings.py`
+
+to run it every day at 4am.
